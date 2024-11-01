@@ -1,0 +1,32 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Project Card 1 -->
+    <g transform="translate(20, 50)">
+        <rect width="120" height="100" rx="12" fill="#A0AEC0" />
+        <rect x="35" y="20" width="50" height="10" fill="#718096" rx="5" /> <!-- Title Placeholder -->
+        <rect x="25" y="40" width="70" height="8" fill="#718096" rx="4" /> <!-- Description Placeholder -->
+                <rect x="25" y="50" width="70" height="8" fill="#718096" rx="4" /> <!-- Description Placeholder -->
+
+        <rect x="35" y="65" width="20" height="8" fill="#718096" rx="4" /> <!-- Tech Stack Placeholder -->
+                <rect x="65" y="65" width="20" height="8" fill="#718096" rx="4" /> <!-- Tech Stack Placeholder -->
+
+        <!-- Icon Placeholders -->
+      <circle cx="45" cy="80" r="5" fill="#4A5568" />
+        <circle cx="75" cy="80" r="5" fill="#4A5568" />
+    </g>
+
+    <!-- Project Card 2 -->
+    <g transform="translate(160, 50)">
+          <rect width="120" height="100" rx="12" fill="#A0AEC0" />
+        <rect x="35" y="20" width="50" height="10" fill="#718096" rx="5" /> <!-- Title Placeholder -->
+        <rect x="25" y="40" width="70" height="8" fill="#718096" rx="4" /> <!-- Description Placeholder -->
+                <rect x="25" y="50" width="70" height="8" fill="#718096" rx="4" /> <!-- Description Placeholder -->
+
+        <rect x="35" y="65" width="20" height="8" fill="#718096" rx="4" /> <!-- Tech Stack Placeholder -->
+                <rect x="65" y="65" width="20" height="8" fill="#718096" rx="4" /> <!-- Tech Stack Placeholder -->
+
+        <!-- Icon Placeholders -->
+      <circle cx="45" cy="80" r="5" fill="#4A5568" />
+        <circle cx="75" cy="80" r="5" fill="#4A5568" />
+    </g>
+</svg>
