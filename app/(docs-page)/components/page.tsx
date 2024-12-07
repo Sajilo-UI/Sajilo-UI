@@ -3,6 +3,7 @@ import Link from 'next/link';
 import * as AspectRatio from '@radix-ui/react-aspect-ratio';
 import Image from 'next/image';
 import preview from '@/assets/preview';
+
 const appsDesign = [
   {
     id: 'navbar',
@@ -40,7 +41,18 @@ const appsDesign = [
     name: 'footer',
     imgSrc: preview.footer,
   },
-
+  {
+    id: 'breadcrumb',
+    url: '/components/breadcrumb',
+    name: 'breadcrumb',
+    imgSrc: preview.breadcrumbs,
+  },
+  {
+    id: 'Price',
+    url: '/components/price',
+    name: 'pricing',
+    imgSrc: preview.pricing,
+  },
 ];
 
 export default function Home() {
@@ -55,39 +67,33 @@ export default function Home() {
 
         <p className='md:text-lg text-sm text-muted-foreground lg:w-[80%]'>
           Beautifully designed components that you can copy and paste into your
-          apps. Accessible. Customizable. 
+          apps. Accessible. Customizable.
         </p>
-        <>
-          <div className='grid md:grid-cols-3 grid-cols-2 gap-6 py-4'>
-            {appsDesign.map((component, index) => {
-              return (
-                <>
-                  <Link
-                    href={component?.url}
-                    className='border p-2    transition-all rounded-lg'
-                  >
-                    <>
-                      <AspectRatio.Root ratio={16 / 9}>
-                        <Image
-                          src={component.imgSrc}
-                          alt='hero-sec'
-                          width={100}
-                          height={100}
-                          className='w-full h-full   rounded-md'
-                        />
-                      </AspectRatio.Root>
-                    </>
-                    <div className='sm:py-2 py-1 sm:px-4 px-2'>
-                      <h1 className='2xl:text-xl xl:text-xl md:text-lg text-sm font-medium leading-[140%] capitalize'>
-                        {component.name}
-                      </h1>
-                    </div>
-                  </Link>
-                </>
-              );
-            })}
-          </div>
-        </>
+        <div className='grid md:grid-cols-3 grid-cols-2 gap-6 py-4'>
+          {appsDesign.map((component, index) => (
+            <Link
+              key={component.id}
+              href={component.url}
+              className='border p-2 transition-all rounded-lg'
+            >
+              <AspectRatio.Root ratio={16 / 9}>
+                <Image
+                  src={component.imgSrc}
+                  alt={`${component.name} preview`}
+                  width={100}
+                  height={100}
+                  className='w-full h-full rounded-md'
+                  priority={index === 0} // Add priority to the first image (or adjust as necessary)
+                />
+              </AspectRatio.Root>
+              <div className='sm:py-2 py-1 sm:px-4 px-2'>
+                <h1 className='2xl:text-xl xl:text-xl md:text-lg text-sm font-medium leading-[140%] capitalize'>
+                  {component.name}
+                </h1>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </>
   );

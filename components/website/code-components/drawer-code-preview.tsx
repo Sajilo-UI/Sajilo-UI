@@ -6,12 +6,8 @@ import {
   TabsTrigger,
 } from '@/components/website/ui/tabs';
 import docs from '@/configs/docs.json';
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-} from '@/components/website/ui/dialog';
-import { Pre, RawCode, highlight } from 'codehike/code';
+
+import { Pre, highlight } from 'codehike/code';
 
 import {
   DrawerContent,
@@ -75,7 +71,7 @@ export default async function DrawerCodePreview({
   if (!currComponent) {
     return <div>Component not found</div>;
   }
-  console.log(currComponent);
+  // console.log(currComponent);
 
   // console.log('childer', children);
 

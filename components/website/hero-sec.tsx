@@ -57,7 +57,7 @@ function HeroSec() {
       <section className='min-h-screen py-24 overflow-hidden relative'>
         <div className='absolute inset-0 top-0 left-0 h-screen w-full items-center px-5 py-24 dark:[background:radial-gradient(87.03%_87.03%_at_50.05%_12.97%,rgba(217,217,217,0)_40%,#010716_100%)] [background:radial-gradient(87.03%_87.03%_at_50.05%_12.97%,rgba(217,217,217,0)_40%,#ffffff_100%)]'>
           <article className='grid gap-4 py-20 relative z-10 sm:px-0 px-4'>
-            <h1 className='xl:text-7xl md:text-6xl sm:text-5xl text-3xl text-center font-semibold leading-[110%]'>
+            <h1 className='xl:text-7xl text-[#18181B] dark:text-white md:text-6xl sm:text-5xl text-3xl text-center font-semibold leading-[110%]'>
               Design That Really <br /> Need In{" "}
               <span className='bg-gradient-to-t sm:w-full w-4/5 from-[#a2b6fa] to-[#334cec] bg-clip-text text-transparent'>
                 Your Website

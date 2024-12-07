@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import { ScrollArea } from '@/components/website/ui/scroll-area';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -7,12 +7,7 @@ import { Component, Rocket } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { SpecialComponents } from '@/configs/docs';
 
-import {
-  Tooltip,
-  TooltipProvider,
-  TooltipContent,
-  TooltipTrigger,
-} from '@radix-ui/react-tooltip';
+
 import { useMediaQuery } from '@/hooks/use-media-query';
 export const basePath = [
   {

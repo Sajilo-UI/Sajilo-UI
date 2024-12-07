@@ -32,6 +32,8 @@ const config: Config = {
         mono: ['var(--font-geist-mono)'],
       },
       colors: {
+        newwhite: '#FAFAFA',
+        newblack: '#18181B',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',

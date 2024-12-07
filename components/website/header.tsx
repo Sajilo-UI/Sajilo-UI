@@ -31,7 +31,7 @@ function Header() {
         <div className='mx-auto flex items-center justify-between gap-2 px-2 2xl:container'>
           <Link href='/' className='hidden lg:block'>
             <div className='relative hidden items-center font-bold gap-2 lg:flex'>
-              <VscSymbolInterface className='bg-black dark:bg-white dark:text-black text-white rounded-lg h-8 w-8 p-1' />
+              <VscSymbolInterface className='bg-[#18181B] dark:bg-white dark:text-[#18181B] text-white rounded-lg h-8 w-8 p-1' />
               Sajilo UI{' '}
             </div>
           </Link>

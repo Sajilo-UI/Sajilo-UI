@@ -4,6 +4,9 @@ import hero from '@/assets/preview/hero.svg';
 import bentogrid from '@/assets/preview/bentogrid.svg';
 import form from '@/assets/preview/form.svg';
 import footer from '@/assets/preview/footer.svg';
+import breadcrumbs from '@/assets/preview/breadcrumbs.svg';
+import pricing from '@/assets/preview/pricing.svg';
+
 const preview = {
   card,
   navbar,
@@ -11,5 +14,7 @@ const preview = {
   bentogrid,
   form,
   footer,
+  breadcrumbs,
+  pricing,
 };
 export default preview;

@@ -2,7 +2,6 @@
 import * as React from 'react';
 import { useRouter } from 'next/navigation';
 import { useTheme } from 'next-themes';
-import { DialogProps } from '@radix-ui/react-dialog';
 import {
   CircleIcon,
   LaptopIcon,
@@ -12,15 +11,16 @@ import {
 } from 'lucide-react';
 import { Command } from 'cmdk';
 
-import { Dialog, DialogContent } from '@/components/website/ui/dialog';
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+} from '@/components/website/ui/dialog';
 import { ScrollArea } from '@/components/website/ui//scroll-area';
-import { generateSidebarData } from './constant';
-import docsData from '@/configs/docs.json' assert { type: 'json' };
 import { cn } from '@/lib/utils';
 import { basePath } from './sidebar';
-import {  SpecialComponents } from '@/configs/docs';
+import { SpecialComponents } from '@/configs/docs';
 // import { MainComponents, SpecialComponents } from '@/configs/docs';
-
 
 // import { componentsArr } from './sidebar';
 
@@ -30,7 +30,7 @@ export function SearchDialog({ classname }: { classname?: string }) {
   const searchbardata = [...basePath, ...SpecialComponents];
   // const searchbardata = [...basePath, ...SpecialComponents, ...MainComponents];
 
-  console.log(searchbardata);
+  // console.log(searchbardata);
 
   const [searchOpen, setSearchOpen] = React.useState(false);
   React.useEffect(() => {
@@ -58,7 +58,6 @@ export function SearchDialog({ classname }: { classname?: string }) {
     setSearchOpen(false);
     command();
   }, []);
-
   return (
     <>
       <button
@@ -78,6 +77,8 @@ export function SearchDialog({ classname }: { classname?: string }) {
 
       <Dialog open={searchOpen} onOpenChange={setSearchOpen}>
         <DialogContent className='w-[90%] rounded-md border p-0 lg:w-[500px] xl:w-[800px]'>
+          <DialogTitle className='sr-only'>Search Dialog</DialogTitle>{' '}
+          {/* Visually hidden title */}
           <Command className='[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-group]]:px-2 [&_[cmdk-input-wrapper]_svg]:h-5 [&_[cmdk-input-wrapper]_svg]:w-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2 [&_[cmdk-item]]:py-3 [&_[cmdk-item]_svg]:h-5 [&_[cmdk-item]_svg]:w-5'>
             <Command.Input
               placeholder='Type a command or search...'
@@ -88,8 +89,6 @@ export function SearchDialog({ classname }: { classname?: string }) {
               <ScrollArea className='h-[300px]'>
                 <Command.Empty>No results found.</Command.Empty>
                 <Command.Group className='py-2'>
-                
-                 
                   <span className='block p-2 text-xs font-semibold'>
                     Getting Started
                   </span>

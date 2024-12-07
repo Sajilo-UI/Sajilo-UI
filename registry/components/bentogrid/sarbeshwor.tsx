@@ -51,6 +51,7 @@ const BentoGrid = () => {
             className='w-full  object-cover rounded-xl my-2' // Set a fixed height for all images
             src={image.src}
             alt={image.alt}
+            key={index}
           />
         ))}
       </div>

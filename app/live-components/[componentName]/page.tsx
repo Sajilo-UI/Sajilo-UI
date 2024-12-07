@@ -17,7 +17,7 @@ export default function SectionPage({
   params: { componentName: string };
 }) {
   const { componentName } = params;
-  console.log(componentName);
+  // console.log(componentName);
 
   // Find the component data based on componentName
   const component = docs.dataArray.reduce((found, category) => {
@@ -30,7 +30,7 @@ export default function SectionPage({
   }, null as any);
   // console.log(component);
 
-  console.log(componentName);
+  // console.log(componentName);
 
   if (!component) {
     notFound();

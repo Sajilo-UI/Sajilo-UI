@@ -1,0 +1,30 @@
+<svg width="600" height="200" viewBox="0 0 600 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="600" height="200" fill="#1f2639" />
+
+    <!-- Pricing Tier 1 -->
+    <rect x="20" y="20" width="180" height="160" fill="#AEB6C2" rx="10"/>
+    <text x="30" y="50" fill="#FFFFFF" font-size="18" font-family="Arial" font-weight="bold">Basic</text>
+    <text x="30" y="80" fill="#FFFFFF" font-size="24" font-family="Arial">$19/month</text>
+    <text x="30" y="110" fill="#FFFFFF" font-size="14" font-family="Arial">Includes basic features</text>
+
+    <!-- Pricing Tier 2 -->
+    <rect x="220" y="20" width="180" height="160" fill="#AEB6C2" rx="10"/>
+    <text x="230" y="50" fill="#FFFFFF" font-size="18" font-family="Arial" font-weight="bold">Standard</text>
+    <text x="230" y="80" fill="#FFFFFF" font-size="24" font-family="Arial">$39/month</text>
+    <text x="230" y="110" fill="#FFFFFF" font-size="14" font-family="Arial">Includes standard features</text>
+
+    <!-- Pricing Tier 3 -->
+    <rect x="420" y="20" width="180" height="160" fill="#AEB6C2" rx="10"/>
+    <text x="430" y="50" fill="#FFFFFF" font-size="18" font-family="Arial" font-weight="bold">Premium</text>
+    <text x="430" y="80" fill="#FFFFFF" font-size="24" font-family="Arial">$59/month</text>
+    <text x="430" y="110" fill="#FFFFFF" font-size="14" font-family="Arial">Includes all features</text>
+
+    <!-- Bottom Divider -->
+    <line x1="0" y1="180" x2="600" y2="180" stroke="#AEB6C2" stroke-width="1"/>
+
+    <!-- Decorative Circles (for a modern touch) -->
+    <circle cx="550" cy="190" r="8" fill="#AEB6C2"/>
+    <circle cx="570" cy="190" r="8" fill="#AEB6C2"/>
+    <circle cx="590" cy="190" r="8" fill="#AEB6C2"/>
+</svg>

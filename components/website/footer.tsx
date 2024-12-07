@@ -14,6 +14,9 @@ const Footer = () => {
         <div className="text-sm text-gray-600 dark:text-gray-400">
           <p>&copy; {new Date().getFullYear()} Sajilo UI. All rights reserved.</p>
         </div>
+        <div className="text-sm text-gray-600 dark:text-gray-400">
+          <p>Love Sajilo UI? Give us a star in <a href="https://github.com/Sajilo-UI/Sajilo-UI" className='text-black dark:text-blue-400 hover:text-teal-500'>Github</a>.</p>
+        </div>
       </div>
     </footer>
   );

@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
-  manifest: `${siteConfig.url}/site.webmanifest`,
+  // manifest: `${siteConfig.url}/site.webmanifest`,
 };
 export default async function RootLayout({
   children,
@@ -57,7 +57,7 @@ export default async function RootLayout({
   return (
     <>
       <html lang='en' suppressHydrationWarning>
-        <body className={poppins.className}>
+        <body className={poppins.className} suppressHydrationWarning>
           <Progressbar>
             <ThemeProvider attribute='class'>
               <div className='isolate min-h-screen' vaul-drawer-wrapper=''>

@@ -13,7 +13,82 @@
       ],
       "type": "demo"
     },
+    {
+      "name": "marquee",
+      "componentArray": [
+        {
+          "componentName": "marqueecomponent",
+          "filesrc": "components/marquee/brand.tsx",
+          "iframeSrc": "live-components/marqueecomponent",
+          "parentlink": "marquee",
+          "parentName": "marquee"
+        },
+        {
+          "componentName": "marqueecomponent2",
+          "filesrc": "components/marquee/marquee2.tsx",
+          "iframeSrc": "live-components/marqueecomponent2",
+          "parentlink": "marquee",
+          "parentName": "marquee"
+        }
+      ],
+      "type": "marquee"
+    },
+    {
+      "name": "breadcrumb",
+      "componentArray": [
+        {
+          "componentName": "breadcrumbcomponent",
+          "filesrc": "components/breadcrumb/breadcrumb.tsx",
+          "iframeSrc": "live-components/breadcrumbcomponent",
+          "parentlink": "breadcrumb",
+          "parentName": "breadcrumb"
+        }
+      ],
+      "type": "breadcrumb"
+    },
 
+    {
+      "name": "notification",
+      "componentArray": [
+        {
+          "componentName": "notificationcomponent",
+          "filesrc": "components/notification/notification.tsx",
+          "iframeSrc": "live-components/notificationcomponent",
+          "parentlink": "notification",
+          "parentName": "notification"
+        }
+      ],
+      "type": "notification"
+    },
+
+    {
+      "name": "bottom",
+      "componentArray": [
+        {
+          "componentName": "bottomcomponent",
+          "filesrc": "components/bottom/bottom.tsx",
+          "iframeSrc": "live-components/bottomcomponent",
+          "parentlink": "bottom",
+          "parentName": "bottom"
+        },
+        {
+          "componentName": "bottomcomponent2",
+          "filesrc": "components/bottom/dock.tsx",
+          "iframeSrc": "live-components/bottomcomponent2",
+          "parentlink": "bottom",
+          "parentName": "bottom"
+        },
+        {
+          "componentName": "bottomcomponent3",
+          "filesrc": "components/bottom/macbookdock.tsx",
+          "iframeSrc": "live-components/bottomcomponent3",
+          "parentlink": "bottom",
+          "parentName": "bottom"
+        }
+      ],
+      "type": "bottom"
+    },
+    
     {
       "name": "error",
       "componentArray": [
@@ -21,6 +96,13 @@
           "componentName": "errorcomponent",
           "filesrc": "components/error/error.tsx",
           "iframeSrc": "live-components/errorcomponent",
+          "parentlink": "error",
+          "parentName": "error"
+        },
+        {
+          "componentName": "errorcomponent2",
+          "filesrc": "components/error/notfoundpage.tsx",
+          "iframeSrc": "live-components/errorcomponent2",
           "parentlink": "error",
           "parentName": "error"
         }
@@ -53,7 +135,21 @@
           "parentName": "price"
         }
       ],
-      "type": "modals"
+      "type": "price"
+    },
+
+    {
+      "name": "drawer",
+      "componentArray": [
+        {
+          "componentName": "drawercomponent",
+          "filesrc": "components/drawer/drawer.tsx",
+          "iframeSrc": "live-components/drawercomponent",
+          "parentlink": "drawer",
+          "parentName": "drawer"
+        }
+      ],
+      "type": "drawer"
     },
 
     {
@@ -201,8 +297,8 @@
           "iframeSrc": "live-components/navbarcomponent2",
           "parentlink": "navbar",
           "parentName": "navbar"
-        }
-,
+        },
+        
         {
           "componentName": "navbarcomponent3",
           "filesrc": "components/navbar/piyush.tsx",

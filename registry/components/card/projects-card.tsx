@@ -33,9 +33,9 @@ const Projects = () => {
         PROJECTS
       </h1>
       <div className='w-full md:w-[70vw] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
-        {projects.map(({ name, description, tech, code, preview }) => (
+        {projects.map(({ name, description, tech, code, preview }, index) => (
           <div
-            key={name}
+            key={index}
             className='flex flex-col items-center border dark:border-darkborder dark:hover:border-darkborderhover  border-lightborder rounded-xl p-4 py-6 shadow-md hover:shadow-2xl dark:hover:shadow-darkshadow hover:shadow-lightshadow group min-h-40 bg-transparent dark:shadow-darkshadow shadow-lightshadow hover:-translate-y-1 transition duration-300'
           >
             {/* Project Name */}

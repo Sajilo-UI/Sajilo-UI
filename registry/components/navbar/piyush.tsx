@@ -54,8 +54,7 @@ const Header = () => {
         >
           <FaInstagram className="dark:text-white text-gray-900 text-2xl dark:hover:text-pink-500 hover:text-pink-500" />
         </a>
-
-        {/* using theme component  */}
+        
       </div>
     </nav>
   );
